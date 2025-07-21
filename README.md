@@ -18,18 +18,20 @@ Movie genre classification from plot summaries is an important NLP task. This pr
 
 ## Setup and Usage
 
-1. Clone the Repository  
+### Clone the Repository
 ```bash
 git clone https://github.com/Trashika112/Movie-Genre-Classifier.git  
 cd Movie-Genre-Classifier
-
 Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
-
 Run the App
+bash
+Copy
+Edit
 python app.py
-
 Project Files
 app.py — Gradio web interface for inference
 
@@ -43,9 +45,13 @@ requirements.txt — Python dependencies
 
 Dependencies
 scikit-learn
+
 joblib
+
 gradio
+
 pandas
+
 numpy
 
 Dataset
@@ -56,7 +62,9 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 Future Work
 Improve performance using transformer-based models (e.g., BERT)
+
 Support multi-label classification for movies with multiple genres
+
 Deploy as a mobile or desktop app
 
 License
@@ -64,3 +72,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 Author
 Trashika S Karkera
+
+yaml
+Copy
+Edit
