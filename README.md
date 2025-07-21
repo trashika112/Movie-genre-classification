@@ -71,7 +71,7 @@ pip install -r requirements.txt
 
 ## 📊 Dataset
 
-This model is trained on the **IMDB Genre Classification Dataset**, which includes thousands of movie plot summaries labeled by genre.
+This model is trained on the **IMDB Genre Classification Dataset** from kaggle, which includes thousands of movie plot summaries labeled by genre.
 
 ---
 
