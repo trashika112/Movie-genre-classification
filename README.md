@@ -27,8 +27,8 @@ Movie genre classification from plot summaries is a useful NLP task in the field
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Trashika112/Movie-Genre-Classifier.git
-cd Movie-Genre-Classifier
+git clone https://github.com/trashika112/Movie-genre-classification.git
+cd Movie-genre-classification
 ```
 
 ### 2. Install Dependencies
