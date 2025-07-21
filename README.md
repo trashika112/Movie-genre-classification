@@ -1,100 +1,66 @@
-# Movie Genre Classification
+# Movie Genre Classifier using Logistic Regression and TF-IDF
 
-A machine learning model that predicts movie genres based on plot summaries using Logistic Regression and TF-IDF features.
+This repository contains a machine learning model that predicts movie genres based on plot summaries. The model uses TF-IDF vectorization combined with a Logistic Regression classifier to categorize movies into multiple genres.
 
----
+## Live Demo
 
-## Overview
+You can interact with the trained model directly on Hugging Face Spaces:  
+[https://huggingface.co/spaces/Trashika112/Movie-genre-classifier](https://huggingface.co/spaces/Trashika112/Movie-genre-classifier)
 
-This project addresses the task of movie genre classification from textual plot summaries. Leveraging classical NLP techniques and supervised learning, the model uses TF-IDF vectorization combined with a Logistic Regression classifier to categorize movies into multiple genres.
+## Project Description
 
-The solution includes:
+Movie genre classification from plot summaries is an important NLP task. This project leverages:
 
-- Data preprocessing and feature extraction with TF-IDF
-- Model training and evaluation on a diverse IMDB-based dataset
-- Serialization of the trained model and preprocessing tools
-- A user-friendly interactive web interface deployed via Hugging Face Spaces for real-time genre prediction
+- **TF-IDF Vectorization:** To extract meaningful textual features from movie plots.  
+- **Logistic Regression:** An efficient and interpretable classifier for multiple genres.  
+- **Gradio Interface:** A user-friendly web app for real-time predictions.  
+- **Multi-genre Support:** Handles classification across various movie genres.
 
----
+## Setup and Usage
 
-## Dataset
+1. Clone the Repository  
+```bash
+git clone https://github.com/Trashika112/Movie-Genre-Classifier.git  
+cd Movie-Genre-Classifier
 
-The model is trained on the [Genre Classification Dataset (IMDB)](https://www.kaggle.com/datasets/hijest/genre-classification-dataset-imdb), a publicly available dataset containing movie plots and genre labels.
+Install Dependencies
+pip install -r requirements.txt
 
 
----
-
-## Features
-
-- **Text vectorization** using TF-IDF with a vocabulary size optimized for performance
-- **Logistic Regression** classifier providing interpretable and efficient genre predictions
-- **Multi-class support** for a wide range of movie genres
-- **Interactive demo** accessible online via Hugging Face Spaces
-
----
-
-## How to Use
-
-### Locally
-
-1. Clone the repository.
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-Run the application:
-
-bash
-
+Run the App
 python app.py
-Access the local interface, input a movie plot summary, and receive genre predictions.
 
-Online Demo
-Access the deployed model with an intuitive UI at:
-https://huggingface.co/spaces/Trashika112/Movie-genre-classifier
-
-Project Structure
+Project Files
 app.py — Gradio web interface for inference
 
-logistic_model.pkl — Serialized Logistic Regression model
+logistic_model.pkl — Trained Logistic Regression model
 
-tfidf_vectorizer.pkl — Serialized TF-IDF vectorizer
+tfidf_vectorizer.pkl — TF-IDF vectorizer used for feature extraction
 
 label_encoder.pkl — Label encoder for genre categories
 
-requirements.txt — Project dependencies
+requirements.txt — Python dependencies
 
 Dependencies
-Python 3.7+
-
 scikit-learn
-
 joblib
-
 gradio
-
 pandas
-
 numpy
 
-For full environment setup, use:
+Dataset
+The model was trained on the IMDB Genre Classification Dataset, which contains movie plot summaries and genre labels.
 
-bash
+Contributing
+Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. Follow the code of conduct.
 
-pip install -r requirements.txt
+Future Work
+Improve performance using transformer-based models (e.g., BERT)
+Support multi-label classification for movies with multiple genres
+Deploy as a mobile or desktop app
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-
-
-
-
-
-
-
-
-
-
-
-
+Author
+Trashika S Karkera
